@@ -18,7 +18,7 @@ end
 @osx_only begin
     using Homebrew
     hdf5 = library_dependency("libhdf5")
-    provides(Homebrew.HB, "hdf5", hdf5, os = :Darwin )
+    provides(Homebrew.HB, "Homebrew/science/hdf5", hdf5, os = :Darwin )
 end
 
 @compat @BinDeps.install Dict(:libhdf5 => :libhdf5)
